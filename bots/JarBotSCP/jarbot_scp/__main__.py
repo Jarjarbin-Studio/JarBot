@@ -4,14 +4,10 @@ from pathlib import Path
 
 import jardiscordengine as JDE
 
-from otc_bot.commands.commands import register_commands
-from otc_bot.commands.terminal_commands import register_terminal_commands
-from otc_bot.constants import BOT_NAME
-from otc_bot.services.generic_helpers import log_error, log_info, move_logs
-from otc_bot.services.guild_helpers import (
-    load_existing_airport_resources,
-    update_bot_presence,
-)
+from jarbot_scp.commands.commands import register_commands
+from jarbot_scp.commands.terminal_commands import register_terminal_commands
+from jarbot_scp.constants import BOT_NAME
+from jarbot_scp.services.generic_helpers import log_error, log_info, move_logs
 
 
 async def main() -> None:
@@ -39,9 +35,6 @@ async def main() -> None:
     async def on_ready() -> None:
         try:
             await bot.sync_commands()
-
-            load_existing_airport_resources(bot)
-            await update_bot_presence(bot)
 
         except Exception as error:
             log_error(

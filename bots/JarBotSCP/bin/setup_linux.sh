@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-LOG_PREFIX="[OTCBot]"
+LOG_PREFIX="[JarBotSCP]"
 LOG_SUFFIX=""
 
 LOG_INFO_COLOR='\033[32m'
@@ -38,8 +38,8 @@ main() {
         return 1
     }
 
-    if [[ "${current_dir##*/}" != "OTCBot" ]]; then
-        log_error "You must run this script from the OTCBot repository root."
+    if [[ "${current_dir##*/}" != "JarBotSCP" ]]; then
+        log_error "You must run this script from the JarBotSCP bot root."
         return 1
     fi
 
@@ -53,8 +53,8 @@ main() {
         return 1
     }
 
-    if [[ "$current_dir" != "$(cd "$repo_root" && pwd -P)" ]]; then
-        log_error "You must run this script from the repository root."
+    if [[ "$current_dir" != "$(cd "$repo_root/bots/JarBotSCP" 2>/dev/null && pwd -P)" ]]; then
+        log_error "You must run this script from the bot root (bots/JarBotSCP)."
         return 1
     fi
 

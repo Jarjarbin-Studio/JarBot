@@ -1,8 +1,8 @@
-##################
-##              ##
-##    OTCBot    ##
-## ------------ ##
-##################
+#####################
+##                 ##
+##    JarBotSCP    ##
+## --------------- ##
+#####################
 
 SHELL   :=  /bin/bash
 
@@ -25,11 +25,11 @@ setup:
 
 ## Run bot
 run:
-	$(PYTHON) -m otc_bot
+	$(PYTHON) -m jarbot_scp
 
 ## Tests with coverage
 tests:
-	$(PYTEST) tests/ --cov=otc_bot --cov-report=term-missing --cov-report=html
+	$(PYTEST) tests/ --cov=jarbot_scp --cov-report=term-missing --cov-report=html
 
 ## Remove generated test reports
 clean-tests:
