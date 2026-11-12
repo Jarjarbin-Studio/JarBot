@@ -1,0 +1,56 @@
+name: Deploy | OTCBot
+
+on:
+  workflow_run:
+    workflows: ["Test | OTCBot"]
+    types: [completed]
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: otc-bot-deployment
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # Deploy only if the tests workflow succeeded on main.
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - name: Prepare deployment files
+        run: |
+          mkdir -p deploy
+
+          cp -r otc_bot deploy/
+          cp -r bin deploy/
+          cp requirements.txt LICENSE Makefile deploy/
+
+          find deploy -type d -name "__pycache__" \
+            -prune -exec rm -rf {} +
+
+          find deploy -type f -name "*.pyc" -delete
+
+          find deploy -maxdepth 2 -type f -print
+
+      - name: Upload OTCBot over SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+        with:
+          server: ${{ secrets.WAIFLY_SFTP_HOST }}
+          port: ${{ secrets.WAIFLY_SFTP_PORT }}
+          username: ${{ secrets.WAIFLY_SFTP_USERNAME }}
+          password: ${{ secrets.WAIFLY_SFTP_PASSWORD }}
+          local_path: "./deploy/*"
+          remote_path: "/"
+          sftp_only: true
+          delete_remote_files: false
