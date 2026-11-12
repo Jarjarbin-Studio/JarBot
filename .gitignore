@@ -1,11 +1,21 @@
-# IGNORED FILES #
-.env
-.coverage
-
-# IGNORED FOLDERS #
-.vscode/
-.idea/
-__pycache__/
+# --- FOLDERS --- #
+perso/
+dist/
+dist_done/
+htmlcov/
 .jde-log/
 .jde-state/
 logs/
+__pycache__/
+.idea/
+.vscode/
+.obsidian/
+.run/
+
+# --- FILES --- #
+.env
+trace
+*.jar-log
+*.egg-info
+coverage.xml
+.coverage
