@@ -43,6 +43,7 @@ jobs:
           username: ${{ secrets.WAIFLY_SFTP_USERNAME }}
           password: ${{ secrets.WAIFLY_SFTP_PASSWORD }}
           script: |
+            cd /home/container
 
             find . -mindepth 1 -maxdepth 1 \
               ! -name '.env' \
