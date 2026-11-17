@@ -33,14 +33,7 @@ async def main() -> None:
     )
 
     async def on_ready() -> None:
-        try:
-            await bot.sync_commands()
-
-        except Exception as error:
-            log_error(
-                "Airport resource discovery failed",
-                f"Failed to discover existing airport resources: {error}",
-            )
+        await bot.sync_commands()
 
         log_info(
             "EVENT",

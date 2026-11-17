@@ -1,0 +1,287 @@
+C programmers never die. They are just cast into `void`.
+I'd tell you a joke about pointers, but I don't want to dereference a `NULL`.
+My relationship status? `malloc()` without a `free()`.
+There's no place like `0x7fff5fbff8c0`.
+I trust the compiler. The compiler trusts me. Together, we overwrite the stack.
+Why did the C programmer get lost? Because he didn't know which way to `goto`.
+Real programmers count from `0` and manage their own memory.
+`/* TODO: Fix segfault */`
+`return 0;` *(Life goal)*
+**Undefined Behavior** is my cardio.
+`free(mind);`
+• `char*` whisperer.
+In case of fire: `git commit`, `git push`, leave building.
+`git push --force` — because history is written by the victors.
+I have commitment issues. Mostly `git commit -m 'fix'`.
+My code doesn't have bugs; it just has unexpected `git blame` targets.
+May the `--force` be with you.
+`git reset --hard HEAD~1` *(My Monday morning routine)*
+There’s no place like `~`.
+`sudo make me a sandwich`.
+I don't always test my scripts, but when I do, I run `rm -rf /` as root.
+`chmod 777`: Because trust is a two-way street.
+Keep calm and `grep` on.
+`:(){ :|:& };:` *(My kind of fork bomb)*
+It works on my machine.
+99 little bugs in the code, 99 little bugs. Take one down, patch it around... 127 little bugs in the code.
+A user interface is like a joke. If you have to explain it, it’s not that good.
+Weeks of coding can save you hours of planning.
+There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.
+I don’t always test my code, but when I do, I do it in production.
+Debugging: Being the detective in a crime movie where you are also the murderer.
+Code never lies, comments sometimes do.
+It’s not a bug; it’s an undocumented feature.
+My code doesn’t work and I have no idea why. My code works and I have no idea why.
+`// TODO: Make this better later` *(Written 4 years ago)*
+Turning coffee into bugs since 2016.
+Works as intended™
+Professional Googler & Stack Overflow copy-paster.
+`false` — It’s funny because it’s true.
+**Segmentation fault (core dumped)** — the OS's way of saying "I'm not mad, just disappointed."
+`printf("Hello, World!");` and nothing shows up? Forgot the `\n`. Your output is buffered, like your feelings.
+In C, `a[i]` is the same as `i[a]`. Nobody asked for this, yet here we are.
+`if (x = 5)` — the assignment that always brings good news.
+A buffer overflow is just your data asking for more space than you gave it. Relatable.
+`malloc` is just a loan you never repay.
+Valgrind: a therapist for your heap.
+Undefined behavior means the compiler is allowed to make demons fly out of your nose. *(Nasal demons, look it up.)*
+I wrote 1000 lines of C. The compiler gave me 3000 warnings. I added `-w`. Problem solved.
+`gcc -Wall -Wextra -Werror` is a love language. A painful one.
+The semicolon: the smallest character that ruins the biggest afternoon.
+`char *s = "hi"; s[0] = 'H';` — surprise, **read-only memory**!
+`int *p; *p = 42;` — let's see where this goes!
+A dangling pointer is a ghost of memory past.
+It's 3 AM, the segfault is at address `0x0`, and the debugger and I both feel nothing.
+Stack Overflow: the only website named after a bug.
+`strcpy`: because who needs boundaries?
+`-fsanitize=address`: the friend who tells you the truth, and you hate them for it.
+Makefile error: `*** missing separator.` Translation: you used spaces instead of a tab. Go sit in the corner.
+`#include <stdio.h>` is the only commitment I've ever kept.
+In C, an array is just a pointer wearing a trench coat.
+C has no strings. It has `char` arrays ending with `\0`, and a lot of trust issues.
+`sizeof(int)` is "whatever the compiler feels like today".
+`int main(void)` — the only function where I'm not allowed to be late.
+A C programmer's idea of garbage collection: "I'll do it myself, thanks."
+A `uint8_t` walks into a bar and orders 256 beers. The bartender says: "You've had enough." The `uint8_t` goes back to 0.
+`while (1);` — my favorite way to say "I'm done with this process".
+Why do C programmers confuse Halloween and Christmas? Because `OCT 31 == DEC 25`.
+There are 10 types of people: those who understand binary and those who don't.
+Python: `import this` — "There should be one obvious way to do it." *(Proceeds to list 14 ways.)*
+Python: where a single misplaced space can ruin your entire day.
+`IndentationError: unexpected indent` — the invisible monster under every Python dev's bed.
+`TypeError: 'NoneType' object is not subscriptable` — every Python dev's morning prayer.
+`0.1 + 0.2 == 0.3` → `False`. Math is hard. Floats are harder.
+`def f(x=[])` — a gift that keeps on giving to the next caller.
+Python is fast, as long as you write it in C.
+The GIL: because threads were getting too ambitious.
+`pip install` — 1 package requested, 214 packages installed.
+`ModuleNotFoundError: No module named 'x'` — but I just installed it! *(Wrong virtualenv.)*
+`virtualenv`: because installing packages globally is how you break your system.
+I wrote a one-line list comprehension. Tomorrow nobody, including me, will be able to read it.
+`if __name__ == "__main__":` — the incantation I copy-paste without understanding.
+`TypeError: f() takes 1 positional argument but 2 were given` — forgot `self`, again.
+Duck typing: if it walks like a duck and quacks like a duck, it will crash at runtime.
+In Python, `"3" * 3` is `"333"`, and nobody is surprised anymore.
+`except Exception: pass` — I fixed the bug by hiding it.
+`print()` is the most used debugger in Python. Change my mind.
+Jupyter Notebook: cell 17 ran before cell 3, and now nothing makes sense.
+Python 2 vs Python 3: `print "hello"` vs `print("hello")`. Some wounds never heal.
+`import antigravity` — the only import that actually opens a webcomic.
+`pandas.SettingWithCopyWarning` — "I'm not sure what you're doing, but I'm sure it's wrong."
+Why do Python programmers wear glasses? Because they can't C#.
+Python: `len("🤦")` is 1. JavaScript: `"🤦".length` is 2. Welcome to Unicode.
+I named my Python variable `list` and now nothing works. *(Shadowing is a lifestyle.)*
+`pip freeze > requirements.txt` — and 3 months later `pip install -r requirements.txt` explodes.
+A Python programmer's love language: type hints that nobody enforces.
+`sudo rm -rf /` — the fastest way to learn what a backup is.
+`rm -rf $DIR/` — a classic. Especially when `$DIR` is empty.
+How do you exit Vim? Nobody knows. Some have been there since 1991.
+`sudo !!` — the polite way to say "please".
+In Bash, `[ $a = $b ]` fails when there are spaces. Spaces matter. That hurts.
+`#!/bin/bash` — the only line of my script I fully trust.
+`cat file | grep x` — and the Useless Use of Cat award goes to... me.
+`Permission denied` — the two most hated words in Linux.
+`>` overwrites your hopes. `>>` appends to them.
+`/dev/null` is my favorite place to send my errors.
+`2>&1` is the emoticon that confuses everyone.
+`awk` is a write-only language. Same for `sed`. Same for my regex.
+`cron` job: `* * * * *` — five stars, and still nothing runs.
+`kill -9` — when `kill` politely failed.
+`curl https://get.something.sh | sh` — the ultimate trust fall.
+`history | grep` — because I don't remember the command I typed 5 minutes ago.
+`sl` instead of `ls` — a train ride for people who make typos.
+Linux user: "I use Arch, by the way." Everyone: "We know."
+`ls` — checking whether the file is really there, the 14th time.
+`cd ..` — the "Ctrl+Z" of the terminal.
+`man` pages: now you know everything and understand nothing.
+`alias please='sudo'` — politeness unlocks root.
+A Bash script of 3 lines is a script. A Bash script of 300 lines is a cry for help. Use Python.
+I wrote a `for` loop in Bash and spent 2 hours figuring out why the filenames with spaces broke it.
+`killall -9 java` — my stress relief.
+`rm` has no Recycle Bin. `rm` has only regret.
+`ssh` into production at 5 PM on a Friday. What could go wrong?
+`TypeScript`: JavaScript with trust issues.
+`any` is the TypeScript way of saying "I'll add types later". *(Spoiler: I won't.)*
+`// @ts-ignore` — the TypeScript equivalent of putting a sticker on the check engine light.
+`as unknown as T` — lying to the compiler, politely.
+`Type 'string' is not assignable to type 'never'.` Well, that's a mood.
+`"strict": true` — the fastest way to find out how many bugs you really had.
+TypeScript: because `undefined is not a function` hits harder at compile time.
+`Cannot read properties of undefined (reading 'map')` — the JavaScript developer's lullaby.
+`typeof null === "object"` — a 30-year-old bug that became a feature.
+`NaN !== NaN` — the only thing in this world that's not equal to itself.
+`[] + []` is `""`. `[] + {}` is `"[object Object]"`. JavaScript is performance art.
+`"b" + "a" + +"a" + "a"` is `"baNaNa"`. JavaScript, ladies and gentlemen.
+`['1','2','3'].map(parseInt)` returns `[1, NaN, NaN]`. *(Why? Don't ask.)*
+`[10, 9, 1].sort()` returns `[1, 10, 9]`. *(Lexicographic order, baby.)*
+`node_modules`: the heaviest object in the known universe.
+A new JavaScript framework was released while you were reading this line.
+`npm install` — 1 dependency requested, 1,327 packages installed, 14 vulnerabilities found.
+`left-pad`: the 11 lines that broke the Internet.
+I forgot an `await` and now my output is `Promise { <pending> }`. Just like my life.
+`==` vs `===` — one lies to you, the other one is honest.
+`console.log("here")` — the most advanced debugger in JavaScript.
+`console.log("here 2")`, `console.log("here 3")`, `console.log("WHY")`.
+`this` in JavaScript is like a mood: it depends on the context.
+`package-lock.json` has 20,000 lines of merge conflicts. Good luck.
+Why was the JavaScript developer sad? Because he didn't Node how to Express himself.
+`undefined` is not a function. `null` is not an object. I am not okay.
+`Math.max()` returns `-Infinity`. Because of course it does.
+`0 == "0"` is true. `0 == []` is true. `"0" == []` is false. I quit.
+`JSON.parse(undefined)` — the SyntaxError that never fails to appear.
+Java and JavaScript have the same relationship as ham and hamster.
+How do you center a `<div>`? Nobody knows. Even Stack Overflow just shrugs.
+`z-index: 9999999;` — because the previous developer used `9999998`.
+`!important` — because specificity is for quitters.
+HTML is not a programming language. *(I said it. Fight me.)*
+`<div>` inside `<div>` inside `<div>` inside `<div>` — div soup is a balanced diet.
+A CSS selector walks into a bar and says: `.bar > .stool:nth-child(2)`.
+CSS is awesome: the text overflows the box because the box is not awesome enough.
+Flexbox: I have to Google `justify-content` vs `align-items` every single time.
+Internet Explorer: the browser you use to download another browser.
+My website looks great on my 27-inch monitor. On mobile, it's a Picasso painting.
+`<marquee>`: because it's 1999 and nobody can stop you.
+A web developer's job: 90% of the time fixing 10% of the CSS.
+`<table>` for layout: the HTML equivalent of using a hammer to eat soup.
+Why did the CSS developer go broke? Because he lost all his `margin`.
+`<br><br><br><br>` — the professional spacing technique.
+`display: none;` — the fastest way to fix a bug, until you realize the button is gone.
+CSS: `position: absolute;` — where the layout goes to die.
+`404`: a SEO expert walks into a bar, pub, tavern, brewery, nightclub...
+HTML `<strong>`, `<b>`, `<em>`, `<i>`: they look the same, and you're still wrong.
+A cookie banner is the final boss of every website.
+A QA engineer walks into a bar. Orders 1 beer. Orders 0 beers. Orders 99999999 beers. Orders -1 beers. Orders a lizard. The bar bursts into flames when the first customer asks where the bathroom is.
+Java: write once, debug everywhere.
+`public static void main(String[] args)` — 6 keywords before "Hello, World!".
+`NullPointerException` — Java's way of saying "hello".
+`AbstractSingletonProxyFactoryBean` — a real Spring class. I wish I was kidding.
+Java developers don't need a gym. Writing getters and setters is cardio enough.
+PHP: the language that makes `"10" == "1e1"` true. And people still deploy it.
+SQL: `DROP TABLE users;` — the command you never ran on prod. *(Right?)*
+`SELECT * FROM tasks WHERE done = true;` — 0 rows returned.
+Rust: the compiler is so strict, I'm almost sure it's my mother.
+The Rust borrow checker: "You can't do that." Me: "But I own it." Borrow checker: "No."
+Regex: you have a problem. You use a regular expression. Now you have two problems.
+YAML: one space off and the whole production is gone.
+Docker: "It works on my machine." Okay, then we'll ship your machine.
+A Docker image of 2 GB for a "Hello, World" app. Efficiency!
+Kubernetes: because you needed a more complex way to restart your app.
+`localhost:3000` — the most visited site of my entire career.
+HTTP 418: I'm a teapot. The only status code that's honest.
+Timezones: the real reason developers go bald.
+Dates in JavaScript: `new Date("2024-01-31")` and `new Date(2024, 0, 31)` are not the same. Go cry.
+`git commit -m "final"`, `git commit -m "final v2"`, `git commit -m "final FINAL"`, `git commit -m "I give up"`.
+Merge conflict: two developers, one line, zero chill.
+`detached HEAD` — the Git state that sounds like a horror movie, and feels like one.
+`.gitignore` — the most important file you forgot to create before pushing your `.env`.
+I accidentally force-pushed to `main` on a Friday afternoon. This is my last commit.
+`git stash` — where my code goes to be forgotten.
+`git blame` told me the bug was written by... me. 6 months ago. Thanks, past me.
+`git rebase -i` — time travel, but with consequences.
+`git gud` isn't a command, but it should be.
+`git pull` — "Already up to date." *(My code says otherwise.)*
+A commit message with 'asdf' is a message from the void.
+My Git history: `fix`, `fix2`, `fix3`, `fix the fix`, `final fix`, `fix for real`.
+Rubber duck debugging: explaining the code to a duck, then realizing the bug halfway through. The duck gets no credit.
+Heisenbug: a bug that disappears when you try to observe it. *(Quantum computing, but make it JavaScript.)*
+It works in debug mode, it crashes in release mode. The compiler laughs in the background.
+The CI pipeline failed. I re-ran it. It passed. We don't talk about it.
+Never deploy on Friday. *(He said, deploying on Friday.)*
+Code review: 10 lines → 10 comments. 500 lines → `LGTM`.
+"LGTM" — 3 letters that mean "I didn't read it".
+StackOverflow: "Closed as duplicate." *(The link to the 'duplicate' is a totally different question.)*
+I don't need a Stack Overflow account. I just need the top answer. And the comment under it.
+AI wrote my code. AI broke my code. AI is now debugging my code. I'm just here for the salary.
+A stack trace of 100 lines for a missing comma. Efficiency!
+Exit code `0`: the only success story I know.
+There are two kinds of developers: those who back up their work, and those who will.
+VS Code vs Vim vs Emacs: the only holy war with extensions.
+Linux: `sudo apt update && sudo apt upgrade` — and now my Wi-Fi is gone.
+Windows Update: "We're working on some updates... 100%". *(Reboots for 3 hours.)*
+Documentation: the thing we all wish existed and nobody wants to write.
+`// I don't know why this works, don't touch it.`
+`// Magic. Do not touch.`
+`// Dear future me: I'm sorry.`
+`// This code is cursed. Proceed at your own risk.`
+Variable naming: `temp`, `temp2`, `tempFinal`, `tempFinalReal`, `tempFinalRealThisTime`.
+`foo`, `bar`, `baz` — because naming things is hard.
+An off-by-one error walks into a bar... and orders 2 beers.
+Programmer's wife: "Go to the store and buy a loaf of bread. If they have eggs, buy a dozen." He comes home with 12 loaves of bread.
+Why do programmers prefer dark mode? Because light attracts bugs.
+Why do Java developers wear glasses? Because they don't C#.
+What's a programmer's favorite hangout place? The Foo Bar.
+How many programmers does it take to change a light bulb? None, that's a hardware problem.
+A programmer is told to "go to hell". He's happy: he has the `goto`.
+Debugging is like being a detective, except you're also the one who left all the clues. And the crime.
+Deleting code is the best feeling in the world. Until you need it again.
+The best code is the code you didn't have to write.
+The most dangerous phrase in programming: "It's just a small change."
+The second most dangerous phrase: "Don't worry, I'll fix it in production."
+The third: "It should work."
+99% of bugs are between the keyboard and the chair.
+My code is not slow. It's just thoroughly thinking.
+I don't have a bug. I have a surprise feature.
+Estimating a project: take your number, double it, and move to the next unit. 2 hours becomes 4 days.
+Software is like sex: it's better when it's free.
+A good programmer looks both ways before crossing a one-way street.
+Programming is 10% writing code and 90% understanding why the code you wrote doesn't work.
+Computer science: where we use `0` and `1` to create problems nobody had before.
+Yo mama so fat she flattened a 100 TB file into 100 KB in `O(1)`.
+Yo mama so fat when she sits on the server, it goes **503 Service Unavailable**.
+Yo mama so fat she's not `O(n)`, she's `O(n!)`.
+Yo mama so old her birthday is `1970-01-01` and she's still on Unix time.
+Yo mama so old she doesn't need `git blame`, she was there when the bug was written.
+Yo mama so dumb she tried to `sudo` her own sandwich and it said "permission denied".
+Yo mama so dumb she tried to center a `<div>` and gave up after 3 years.
+Yo mama so dumb she uses `git push --force` to resolve a merge conflict.
+Yo mama so ugly `Valgrind` reported a memory leak just by looking at her.
+Yo mama so ugly even the CAPTCHA asked "are you sure you're human?".
+Your code is so bad that `git blame` should come with a restraining order.
+Your code is so bad the linter filed for emotional damages.
+Your pull request is like your personality: 4000 lines, no tests, and nobody asked.
+Your commit messages are a cry for help, and nobody's coming.
+I've seen better architecture in a sandcastle built by a drunk toddler.
+Your regex looks like a cat walked across the keyboard, and the cat has better syntax.
+Your code smells so bad even the rubber duck asked for a transfer.
+That's not a memory leak, that's your code pissing itself.
+Your code is shit. Mine is too, but at least mine works. Barely.
+I'd love to review your code, but my eyes have already suffered enough today.
+You're like a segfault: unexpected, unwanted, and everyone's trying to figure out what the hell you did.
+Your sex life is like a null pointer: undefined, and it crashes if anyone tries to use it.
+Your ex called. She wants her `null` back.
+PHP is like herpes: nobody wants it, everybody has it, and it keeps coming back.
+JavaScript is like a drunk uncle: unpredictable, says `[] + {}` at dinner, and everyone pretends it's fine.
+Java developers are paid by the line. That's why `AbstractSingletonProxyFactoryBeanFactory` exists.
+Stack Overflow: where you ask a question and get roasted by a guy with 400k reputation and no life.
+"Why would you even want to do that?" — the 8 most violent words on Stack Overflow.
+Fuck it, ship it. We'll fix it in prod.
+Merge conflicts are just git making you choose which asshole's code to keep. Usually yours.
+Dependency hell: 14,000 packages for one button, 3 maintainers, 1 of them dead, 2 of them hating you.
+Product manager: "It's just a small change." Me: *slowly reaches for the keyboard like it's a weapon*.
+Scrum standup: 15 minutes of standing, 45 minutes of lying.
+Agile: the only thing that's fast is how quickly we burn out.
+Whoever wrote this code deserves a special place in hell. `git blame` says... oh. It's me.
+Junior dev dropped the production database. Senior dev: "Congrats, you're a real developer now."
+You can't spell "fuck" without "u", and you can't spell "bug" without "u" either. Coincidence? I think not.
+Frontend: "Backend is just CRUD." Backend: "Frontend is just divs." Both: "Don't talk to DevOps."
+My code doesn't have bugs. It has *opinions*, and they're all assholes.
