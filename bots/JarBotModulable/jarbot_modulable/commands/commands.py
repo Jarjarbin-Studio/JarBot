@@ -1,8 +1,8 @@
 import jardiscordengine as JDE
 
-from jarbot_scp.constants import PGE_ROLE, BACH_ROLE
-from jarbot_scp.services.funny_helpers import get_funny
-from jarbot_scp.services.role_helpers import change_student_role
+from jarbot_modulable.constants import PGE_ROLE, BACH_ROLE
+from jarbot_modulable.services.funny_helpers import get_funny
+from jarbot_modulable.services.role_helpers import change_student_role
 
 
 @JDE.Commands.command(

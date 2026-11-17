@@ -4,11 +4,11 @@ from pathlib import Path
 
 import jardiscordengine as JDE
 
-from jarbot_scp.commands.commands import register_commands
-from jarbot_scp.commands.terminal_commands import register_terminal_commands
-from jarbot_scp.constants import BOT_NAME
-from jarbot_scp.services.funny_helpers import get_funny
-from jarbot_scp.services.generic_helpers import log_info, move_logs
+from jarbot_modulable.commands.commands import register_commands
+from jarbot_modulable.commands.terminal_commands import register_terminal_commands
+from jarbot_modulable.constants import BOT_NAME
+from jarbot_modulable.services.funny_helpers import get_funny
+from jarbot_modulable.services.generic_helpers import log_info, move_logs
 
 
 def init(project_path: Path) -> None:

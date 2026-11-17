@@ -4,7 +4,7 @@ from __future__ import annotations
 import discord
 import jardiscordengine as JDE
 
-from jarbot_scp.constants import CONFIRMATION_TIMEOUT
+from jarbot_modulable.constants import CONFIRMATION_TIMEOUT
 
 
 async def send_ephemeral(
