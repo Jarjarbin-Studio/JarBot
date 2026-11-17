@@ -5,6 +5,7 @@ import discord
 import jardiscordengine as JDE
 
 from jarbot_modulable.constants import CONFIRMATION_TIMEOUT
+from jarbot_modulable.services.generic_helpers import log_info
 
 
 async def send_ephemeral(
@@ -177,6 +178,7 @@ class RoleConfirmationView(discord.ui.View):
             self.stop()
             return
 
+        log_info("Role given", f"{member.name} is now {self.requested_roles}")
         await interaction.edit_original_response(
             content=(
                 f"You have successfully received "
