@@ -35,20 +35,6 @@ jobs:
 
           find deploy -maxdepth 2 -type f -print
 
-      - name: Clean remote deployment directory
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.WAIFLY_SFTP_HOST }}
-          port: ${{ secrets.WAIFLY_SFTP_PORT }}
-          username: ${{ secrets.WAIFLY_SFTP_USERNAME }}
-          password: ${{ secrets.WAIFLY_SFTP_PASSWORD }}
-          script: |
-            cd /home/container
-
-            find . -mindepth 1 -maxdepth 1 \
-              ! -name '.env' \
-              -exec rm -rf -- {} +
-
       - name: Upload JarBot over SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
@@ -59,4 +45,4 @@ jobs:
           local_path: "./deploy/*"
           remote_path: "/"
           sftp_only: true
-          delete_remote_files: false
+          delete_remote_files: true
