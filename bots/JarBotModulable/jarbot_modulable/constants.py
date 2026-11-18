@@ -9,3 +9,5 @@ PGE_ROLE: Final[JDE.Entities.JDEEntityRole] = JDE.Entities.JDEEntityRole(1559861
 BACH_ROLE: Final[JDE.Entities.JDEEntityRole] = JDE.Entities.JDEEntityRole(1559862969981075536, "BACH", _jde_warn = False)
 
 CONFIRMATION_TIMEOUT: Final[int] = 60
+
+LIST_MESSAGE_LIMIT: Final[int] = 20

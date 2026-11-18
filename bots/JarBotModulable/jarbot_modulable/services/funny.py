@@ -2,9 +2,7 @@ from pathlib import Path
 from random import choice
 from typing import Sequence
 
-import jardiscordengine as JDE
-
-from jarbot_modulable.services.generic_helpers import log_info
+from jarbot_modulable.services.generic import log_info
 
 
 BOT_FUNNY: Sequence[str] = []

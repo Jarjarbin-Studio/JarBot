@@ -1,11 +1,10 @@
-
 import json
 import urllib.error
 import urllib.request
 
 import jardiscordengine as JDE
 
-from jarbot_modulable.services.generic_helpers import log_error, log_info, log_warning
+from jarbot_modulable.services.generic import log_error, log_info, log_warning
 
 
 def request_pterodactyl_stop() -> None:

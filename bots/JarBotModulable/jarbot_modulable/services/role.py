@@ -1,11 +1,8 @@
-
-from __future__ import annotations
-
 import discord
 import jardiscordengine as JDE
 
 from jarbot_modulable.constants import CONFIRMATION_TIMEOUT
-from jarbot_modulable.services.generic_helpers import log_info
+from jarbot_modulable.services.generic import log_info
 
 
 async def send_ephemeral(
