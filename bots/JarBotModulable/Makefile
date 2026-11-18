@@ -25,7 +25,7 @@ setup:
 
 ## Run bot
 run:
-	$(PYTHON) -m jarbot_scp
+	$(PYTHON) -m jarbot_modulable
 
 ## Tests with coverage
 tests:
