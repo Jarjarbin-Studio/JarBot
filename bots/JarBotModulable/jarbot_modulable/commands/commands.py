@@ -122,7 +122,7 @@ async def man(
     ) -> None:
     if ctx.channel.id != MAN_CHANNEL.id:
         await ctx.interaction.response.send_message(
-            f"This command can only be used in {MAN_CHANNEL.name} ({MAN_CHANNEL.id}).",
+            f"This command can only be used in <#{MAN_CHANNEL.id}>.",
             ephemeral=True,
         )
         return
