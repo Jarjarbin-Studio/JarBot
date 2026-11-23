@@ -8,27 +8,40 @@ def log_info(
         title: str,
         description: str
     ) -> None:
-    JDE.Interns.Logs.log("INFO", title, description)
+
+    if JDE._session is not None:
+        JDE.Interns.Logs.log("INFO", title, description)
+    else:
+        print(f"[{title}] {description}")
 
 
 def log_warning(
         title: str,
         description: str
     ) -> None:
-    JDE.Interns.Logs.log("WARN", title, description)
+
+    if JDE._session is not None:
+        JDE.Interns.Logs.log("WARN", title, description)
+    else:
+        print(f"[{title}] {description}")
 
 
 def log_error(
         title: str,
         description: str
     ) -> None:
-    JDE.Interns.Logs.log("ERROR", title, description)
+
+    if JDE._session is not None:
+        JDE.Interns.Logs.log("ERROR", title, description)
+    else:
+        print(f"[{title}] {description}")
 
 
 def move_logs(
         jde_log_directory: Path,
         log_directory: Path
     ) -> None:
+
     log_directory.mkdir(parents=True, exist_ok=True)
 
     if jde_log_directory.is_dir():

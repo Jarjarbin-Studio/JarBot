@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from pathlib import Path
 
 import jardiscordengine as JDE
@@ -7,8 +5,9 @@ import jardiscordengine as JDE
 from jarbot_modulable.commands.commands import register_commands
 from jarbot_modulable.commands.terminal_commands import register_terminal_commands
 from jarbot_modulable.constants import BOT_NAME
-from jarbot_modulable.services.funny_helpers import get_funny
-from jarbot_modulable.services.generic_helpers import log_info, move_logs
+from jarbot_modulable.services.funny import get_funny
+from jarbot_modulable.services.generic import log_info, move_logs
+from jarbot_modulable.services.pterodactyl import request_pterodactyl_stop
 
 
 def init(project_path: Path) -> None:
@@ -23,11 +22,11 @@ async def main() -> None:
 
     intents = JDE.Entities.JDEEntityIntents.default()
 
-    intents.moderation = True
+    intents.members = True
 
     bot = JDE.Bots.JDEBot(
         intents=intents,
-        activity=JDE.Entities.JDEEntityActivityGame("Bot starting..."),
+        activity=JDE.Entities.JDEEntityActivityGame("Bot starting | o.O"),
         status=JDE.Entities.JDEStatus.IDLE,
         no_sync=("MESSAGES",),
     )
@@ -42,25 +41,42 @@ async def main() -> None:
         f"Setting up {BOT_NAME}.",
     )
 
-    async def on_ready() -> None:
+    async def on_starting() -> None:
+        log_info(
+            "EVENT",
+            "On starting ran",
+        )
+
+    async def on_started() -> None:
         await bot.sync_commands()
         await bot.change_presence(
-            activity=JDE.Entities.JDEEntityActivityGame("Bot online ;)"),
+            activity=JDE.Entities.JDEEntityActivityGame("Bot online | :D"),
             status=JDE.Entities.JDEStatus.ONLINE,
         )
 
         log_info(
             "EVENT",
-            "On ready ran",
+            "On started ran",
         )
 
-    async def on_close() -> None:
+    async def on_closing() -> None:
+        await bot.change_presence(
+            activity=JDE.Entities.JDEEntityActivityGame("Bot offline | zzz"),
+            status=JDE.Entities.JDEStatus.OFFLINE,
+        )
+
         log_info(
             "EVENT",
-            "On close ran",
+            "On closing ran",
         )
 
-    terminal = JDE.Terminals.JDETerminal(bot, on_ready=on_ready, on_close=on_close)
+    async def on_closed() -> None:
+        log_info(
+            "EVENT",
+            "On closed ran",
+        )
+
+    terminal = JDE.Terminals.JDETerminal(bot, on_starting=on_starting, on_started=on_started, on_closing=on_closing, on_closed=on_closed)
 
     register_commands(bot)
     register_terminal_commands(terminal)
@@ -91,4 +107,9 @@ if __name__ == "__main__":
 
     finally:
         JDE.quit()
-        move_logs(jde_log_directory, log_directory)
+
+        try:
+            move_logs(jde_log_directory, log_directory)
+
+        finally:
+            request_pterodactyl_stop()
