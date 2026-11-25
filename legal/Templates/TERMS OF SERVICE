@@ -1,0 +1,61 @@
+# JarBot Testing — Terms of Service
+
+**Last updated:** 25 November 2026
+
+These Terms of Service ("Terms") apply to the Discord bot **JarBot Testing** (the "Bot"), operated by **Jarjarbin Studio** ("we", "us", "the developer"). By adding the Bot to a server or interacting with it, you agree to these Terms. If you do not agree, do not use the Bot.
+
+## 1. What the Bot is
+
+JarBot Testing is an **experimental, internal testing instance** used to develop and test bots built with [JarDiscordEngine](https://github.com/Jarjarbin-Studio/JarDiscordEngine) and published in the [JarBot repository](https://github.com/Jarjarbin-Studio/JarBot). It is not a finished product and is not intended for general public use.
+
+Because it is a testing instance:
+
+- features may appear, change, break or disappear at any time;
+- it may go offline without notice;
+- stored data may be reset or deleted at any time.
+
+## 2. Eligibility
+
+You must comply with [Discord's Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines). You must meet Discord's minimum age requirement in your country. Server administrators who add the Bot are responsible for ensuring its use is appropriate in their server.
+
+## 3. Acceptable use
+
+You agree not to:
+
+- use the Bot to break any law, or Discord's Terms or Guidelines;
+- attempt to exploit, overload, spam, reverse-engineer for malicious purposes, or disrupt the Bot or its infrastructure;
+- use the Bot to harass, abuse or harm others, or to distribute malware or illegal content;
+- try to access data belonging to other users or servers.
+
+## 4. Availability and no warranty
+
+The Bot is provided **"as is" and "as available"**, without warranties of any kind, express or implied, including reliability, availability, accuracy or fitness for a particular purpose. We do not guarantee that the Bot will work correctly, continuously or without errors.
+
+## 5. Limitation of liability
+
+To the maximum extent permitted by applicable law, we are not liable for any indirect, incidental or consequential damages, or for any loss of data, arising from your use of (or inability to use) the Bot. Nothing in these Terms excludes liability that cannot be excluded under applicable law.
+
+## 6. Data and privacy
+
+Our handling of personal data is described in the [Privacy Policy](./PRIVACY_POLICY.md), which forms part of these Terms.
+
+## 7. Open source
+
+The source code of the Bot and the engine is public (see the links above) and is licensed under the license stated in each repository. These Terms govern use of the **hosted Bot**; the code license governs use of the **source code**. Running your own copy of the code is subject to the repository license, not these Terms.
+
+## 8. Suspension and termination
+
+We may restrict, block or remove access to the Bot for any user or server, at any time and without notice, in particular in case of abuse or breach of these Terms. You may stop using the Bot at any time by removing it from your server.
+
+## 9. Changes
+
+We may update these Terms at any time. The "Last updated" date will change and the new version will be published in the repository. Continued use of the Bot after a change means you accept the updated Terms.
+
+## 10. Governing law
+
+These Terms are governed by the laws of France, without prejudice to any mandatory consumer-protection rules that apply to you.
+
+## 11. Contact
+
+- Discord: **jarjarbin_2006**
+- GitHub: [Jarjarbin-Studio/JarBot](https://github.com/Jarjarbin-Studio/JarBot) (open an issue)

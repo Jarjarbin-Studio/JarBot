@@ -1,0 +1,66 @@
+# [BOT_NAME] — Privacy Policy
+
+**Last updated:** [DATE]
+
+This Privacy Policy explains what data the Discord bot **[BOT_NAME]** (the "Bot") processes. The Bot is operated by **Jarjarbin Studio** (the "developer", "we"), contact: Discord **jarjarbin_2006**.
+
+We keep data collection to the minimum needed for the Bot to work.
+
+## 1. Data we process
+
+| Data | Why |
+|---|---|
+| Discord user IDs | Identify who runs a command; permissions; [USER-LEVEL FEATURES, e.g. levels, economy] |
+| Server (guild), channel and role IDs | Make features work in the right place; per-server settings |
+| Command inputs (e.g. slash command options) | Execute the command |
+| Message content | **Only** when a message is a command directed at the Bot[, or when required by: FEATURE] |
+| Per-server settings | Store each server's configuration |
+| [FEATURE-SPECIFIC DATA] | [PURPOSE] |
+| Technical logs (timestamps, command names, error traces) | Debugging, security and stability |
+
+We do **not** knowingly collect real names, e-mail addresses, payment data, location data, or any sensitive personal data. We do not sell data, and we do not use it for advertising or profiling.
+
+> **Developer note — delete before publishing:** edit this table so it matches exactly what this bot stores. Remove rows that do not apply.
+
+## 2. Legal basis (GDPR)
+
+Where the GDPR applies, we process data to **perform the service you request** (running the Bot's commands and features) and on the basis of our **legitimate interest** in securing, maintaining and improving the Bot.
+
+## 3. Retention
+
+- **Logs:** kept for up to [30] days, then deleted.
+- **Settings and feature data:** kept while the Bot is in your server (or, for user-level data, until you ask for deletion).
+- When the Bot is removed from a server, that server's data is deleted within [30] days, or sooner on request.
+
+## 4. Sharing
+
+We do not sell or share personal data with third parties, except:
+
+- **Discord**, which necessarily processes data as the platform the Bot runs on (see [Discord's Privacy Policy](https://discord.com/privacy));
+- **Hosting/infrastructure providers** used to run the Bot, acting only to provide that service;
+- when required by law.
+
+## 5. Your rights
+
+Depending on where you live (including under the GDPR), you may have the right to access, correct, delete, restrict or object to the processing of your data. To exercise these rights, or to request deletion of data linked to your Discord ID or server ID, contact **jarjarbin_2006** on Discord, or open an issue on [GitHub](https://github.com/Jarjarbin-Studio/JarBot). If you are in the EU, you may also lodge a complaint with your local data protection authority (in France, the CNIL).
+
+## 6. Children
+
+The Bot is not directed at children under the minimum age required by Discord in their country. We do not knowingly collect data from them. If you believe we have, contact us and we will delete it.
+
+## 7. Security
+
+We take reasonable measures to protect data (restricted access, secrets kept out of the repository). No system is fully secure.
+
+## 8. Open source
+
+The code is public in [JarBot](https://github.com/Jarjarbin-Studio/JarBot) and [JarDiscordEngine](https://github.com/Jarjarbin-Studio/JarDiscordEngine), so you can verify what the Bot does. The hosted instance's data is not public.
+
+## 9. Changes
+
+We may update this policy. The "Last updated" date will change and the new version will be published in the repository.
+
+## 10. Contact
+
+- Discord: **jarjarbin_2006**
+- GitHub: [Jarjarbin-Studio/JarBot](https://github.com/Jarjarbin-Studio/JarBot) (open an issue)

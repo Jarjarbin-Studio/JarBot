@@ -1,0 +1,82 @@
+# JarBot Testing — Terms of Service
+
+**Last updated:** 25 November 2026
+
+These Terms of Service ("Terms") apply to the Discord application **JarBot Testing** (the "Bot"), operated by **Jarjarbin Studio** ("we", "us", "the developer"). By adding the Bot to a server, interacting with it, or sending it a direct message, you agree to these Terms. If you do not agree, do not use the Bot.
+
+## 1. What the Bot is
+
+JarBot Testing is an **experimental, internal testing application** used to develop and test the bots of the [JarBot repository](https://github.com/Jarjarbin-Studio/JarBot), built with [JarDiscordEngine](https://github.com/Jarjarbin-Studio/JarDiscordEngine). It is **not a finished product and not intended for general public use**.
+
+Specifically:
+
+- The Bot's credentials may be used by **several different bot clients and engine builds**, which are run **locally** by the developer (on the developer's own machines or development environments), not as a permanently hosted service.
+- Features, commands and behaviour **change constantly** and may break, appear, or disappear at any time.
+- It may be offline most of the time and may go on or offline without notice.
+- Any stored data may be reset or deleted at any time.
+
+We recommend adding the Bot **only to servers dedicated to testing**, and only if you know and trust the developer.
+
+## 2. Scope of use: everything Discord allows
+
+For testing purposes, the Bot is deliberately **not limited to a specific feature set**. It may use any capability that Discord makes available to bots, within the rules set by Discord, including:
+
+- **All Gateway Intents**, including the privileged ones (Server Members, Presence, and Message Content);
+- **Any permission** a server administrator grants it, up to and including Administrator;
+- **Any scope** you authorize, including `bot`, `applications.commands`, and, where you choose to authorize them, OAuth2 scopes such as `identify`, `email`, `guilds`, `guilds.members.read` and `connections`;
+- reading, sending, editing and deleting messages, embeds, attachments, reactions, polls, threads, and forum posts;
+- slash commands, context-menu commands, buttons, select menus, modals and other interactions;
+- managing roles, channels, emojis, stickers, scheduled events, webhooks, invites, auto-moderation rules and other server settings;
+- moderation actions (timeouts, kicks, bans);
+- joining voice and stage channels, and voice features;
+- direct messages with users.
+
+**Granting permissions is your choice.** The Bot can only do what Discord and the server's administrators allow. If you do not want the Bot to have a given capability, do not grant it, or do not add the Bot to your server. You can remove the Bot, or revoke its permissions and OAuth2 authorizations, at any time.
+
+## 3. Eligibility
+
+You must comply with [Discord's Terms of Service](https://discord.com/terms), [Community Guidelines](https://discord.com/guidelines), [Developer Terms of Service](https://support-dev.discord.com/hc/articles/8562894815383) and [Developer Policy](https://support-dev.discord.com/hc/articles/6024873704471). You must meet Discord's minimum age requirement in your country. Server administrators who add the Bot are responsible for ensuring its use is appropriate in their server and for informing their members that a testing bot with broad access is present.
+
+## 4. Acceptable use
+
+You agree not to:
+
+- use the Bot to break any law, or any Discord rule listed above;
+- attempt to exploit, overload, spam, or disrupt the Bot or its infrastructure, or to steal its credentials;
+- use the Bot to harass, abuse or harm others, or to distribute malware or illegal content;
+- attempt to access data belonging to other users or servers through the Bot.
+
+The Developer likewise commits to using the Bot only in compliance with Discord's rules (see the [Privacy Policy](./PRIVACY_POLICY.md) for specific commitments).
+
+## 5. Availability and no warranty
+
+The Bot is provided **"as is" and "as available"**, without warranties of any kind, express or implied, including reliability, availability, accuracy, security, or fitness for a particular purpose. We do not guarantee that the Bot will work correctly, continuously or without errors, and testing code may behave unexpectedly, including taking unintended actions in servers where it has permissions.
+
+## 6. Limitation of liability
+
+To the maximum extent permitted by applicable law, we are not liable for any indirect, incidental or consequential damages, or for any loss of data or server configuration, arising from your use of (or inability to use) the Bot. Because the Bot may hold powerful permissions at your request, **you should not grant it permissions you are not prepared to risk in a test environment**. Nothing in these Terms excludes liability that cannot be excluded under applicable law.
+
+## 7. Data and privacy
+
+Our handling of personal data is described in the [Privacy Policy](./PRIVACY_POLICY.md), which forms part of these Terms.
+
+## 8. Open source
+
+The source code of the bots and the engine is public (see the links above) and is licensed under the license stated in each repository. These Terms govern use of the **JarBot Testing application**; the code license governs use of the **source code**. Running your own copy of the code with your own Discord application is subject to the repository license, not these Terms.
+
+## 9. Suspension and termination
+
+We may restrict, block or remove the Bot from any server, or ignore any user, at any time and without notice, in particular in case of abuse or breach of these Terms. You may stop using the Bot at any time by removing it from your server.
+
+## 10. Changes
+
+We may update these Terms at any time. The "Last updated" date will change and the new version will be published in the repository. Continued use of the Bot after a change means you accept the updated Terms.
+
+## 11. Governing law
+
+These Terms are governed by the laws of France, without prejudice to any mandatory consumer-protection rules that apply to you.
+
+## 12. Contact
+
+- Discord: **jarjarbin_2006**
+- GitHub: [Jarjarbin-Studio/JarBot](https://github.com/Jarjarbin-Studio/JarBot) (open an issue)
