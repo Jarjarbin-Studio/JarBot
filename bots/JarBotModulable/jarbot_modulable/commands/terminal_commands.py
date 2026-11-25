@@ -17,7 +17,7 @@ async def list(args: list[str]):
     Console = JDE.Interns.Externs.JTKExternConsole
 
     if len(args) != 1:
-        Console.print(Console.Text("Missing list type").f_color_error())
+        Console.print(Console.Text("Missing list type").f_color_error(), flush=True)
         return
 
     if args[0] == "users":
@@ -44,12 +44,14 @@ async def list(args: list[str]):
             + Console.Text(f"'{args[0]}'").f_style_bold().f_color_foreground(
                 Console.ColorRGB(255, 190, 90)
             )
-            + Console.Text(".").f_color_error()
+            + Console.Text(".").f_color_error(),
+            flush=True
         )
 
         Console.print(
             Console.Text("Available types: ").f_color_warning()
-            + Console.Text("'users', 'guilds', 'categories', 'channels', 'roles', 'messages'").f_style_bold().f_color_success()
+            + Console.Text("'users', 'guilds', 'categories', 'channels', 'roles', 'messages'").f_style_bold().f_color_success(),
+            flush=True
         )
 
 
@@ -62,13 +64,15 @@ async def announce(args: list[str]) -> None:
 
     if args:
         Console.print(
-            Console.Text("This command does not accept arguments.").f_color_error()
+            Console.Text("This command does not accept arguments.").f_color_error(),
+            flush=True
         )
         return
 
     if BOT is None:
         Console.print(
-            Console.Text("The bot is not initialized.").f_color_error()
+            Console.Text("The bot is not initialized.").f_color_error(),
+            flush=True
         )
         return
 
