@@ -55,7 +55,8 @@ def _check_bot(bot, Console):
             Console.Text(
                 "The bot is not synchronized..."
             ).f_color_error()
-            + "\n\n"
+            + "\n\n",
+            flush=True
         )
         return False
 
@@ -64,7 +65,8 @@ def _check_bot(bot, Console):
             Console.Text(
                 "The Discord bot is not connected."
             ).f_color_error()
-            + "\n\n"
+            + "\n\n",
+            flush=True
         )
         return False
 
@@ -72,6 +74,7 @@ def _check_bot(bot, Console):
 
 
 async def _read_input(prompt: str = "") -> str:
+    JDE.Interns.Externs.JTKExternConsole.print(prompt, flush=True)
     return JDE.Interns.Externs.JTKExternConsole.Console.Console.input(prompt=prompt)
 
 
@@ -79,7 +82,8 @@ def _print_error(message: str) -> None:
     Console = _get_console()
 
     Console.print(
-        Console.Text(message).f_color_error()
+        Console.Text(message).f_color_error(),
+        flush=True
     )
 
 
@@ -204,7 +208,7 @@ def _display_guild_targets(targets) -> None:
             + "\n\n"
         )
 
-    Console.print(output)
+    Console.print(output, flush=True)
 
 
 def _display_role_targets(targets) -> None:
@@ -256,7 +260,7 @@ def _display_role_targets(targets) -> None:
             + "\n"
         )
 
-    Console.print(output)
+    Console.print(output, flush=True)
 
 
 def _display_user_targets(targets) -> None:
@@ -306,7 +310,7 @@ def _display_user_targets(targets) -> None:
             + "\n"
         )
 
-    Console.print(output)
+    Console.print(output, flush=True)
 
 
 async def _select_scope() -> str | None:
@@ -323,7 +327,8 @@ async def _select_scope() -> str | None:
         + _tree(Console, "  [1] Guild\n", Console.ColorRGB(100, 200, 255))
         + _tree(Console, "  [2] Role\n", Console.ColorRGB(190, 150, 255))
         + _tree(Console, "  [3] User\n", Console.ColorRGB(100, 220, 150))
-        + _tree(Console, "\n  [Q] Cancel\n", Console.ColorRGB(255, 100, 100))
+        + _tree(Console, "\n  [Q] Cancel\n", Console.ColorRGB(255, 100, 100)),
+        flush=True
     )
 
     while True:
@@ -356,7 +361,8 @@ async def _select_target(targets, display_function, target_type: str):
             Console,
             "Enter Q to cancel.\n",
             Console.ColorRGB(255, 100, 100),
-        )
+        ),
+        flush=True
     )
 
     while True:
@@ -423,7 +429,8 @@ async def _ask_body() -> str | None:
             Console,
             "Enter /cancel on a line to cancel.\n\n",
             Console.ColorRGB(255, 100, 100),
-        )
+        ),
+        flush=True
     )
 
     lines = []
@@ -549,7 +556,7 @@ def _display_preview(
         + "\n"
     )
 
-    Console.print(output)
+    Console.print(output, flush=True)
 
 
 async def _confirm_announcement() -> bool:
@@ -566,7 +573,8 @@ async def _confirm_announcement() -> bool:
             Console,
             "  [N] Cancel\n",
             Console.ColorRGB(255, 100, 100),
-        )
+        ),
+        flush=True
     )
 
     while True:
@@ -633,7 +641,8 @@ async def _send_announcement(
                     Console,
                     " - Sent",
                     Console.ColorRGB(100, 220, 150),
-                )
+                ),
+                flush=True
             )
 
         except discord.Forbidden:
@@ -654,7 +663,8 @@ async def _send_announcement(
                     Console,
                     " - DM unavailable",
                     Console.ColorRGB(255, 100, 100),
-                )
+                ),
+                flush=True
             )
 
         except discord.HTTPException as error:
@@ -675,7 +685,8 @@ async def _send_announcement(
                     Console,
                     f" - HTTP error: {error}",
                     Console.ColorRGB(255, 100, 100),
-                )
+                ),
+                flush=True
             )
 
     return success, failed
@@ -695,7 +706,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
     Console.print(
         Console.Text("\n")
         + Console.Text("Announcement wizard").f_style_bold().f_color_success()
-        + "\n"
+        + "\n",
+        flush=True
     )
 
     # -------------------------------------------------------------------------
@@ -706,7 +718,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
 
     if target_type is None:
         Console.print(
-            Console.Text("Announcement cancelled.").f_color_warning()
+            Console.Text("Announcement cancelled.").f_color_warning(),
+            flush=True
         )
         return
 
@@ -726,7 +739,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
         Console.print(
             Console.Text(
                 "\nRetrieving members from all guilds..."
-            ).f_color_warning()
+            ).f_color_warning(),
+            flush=True
         )
 
         targets = await _get_user_targets(bot)
@@ -740,7 +754,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
 
     if target is None:
         Console.print(
-            Console.Text("Announcement cancelled.").f_color_warning()
+            Console.Text("Announcement cancelled.").f_color_warning(),
+            flush=True
         )
         return
 
@@ -750,7 +765,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
 
     Console.print(
         Console.Text("\nRetrieving announcement recipients...")
-        .f_color_warning()
+        .f_color_warning(),
+        flush=True
     )
 
     try:
@@ -785,7 +801,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
 
     if title is None:
         Console.print(
-            Console.Text("Announcement cancelled.").f_color_warning()
+            Console.Text("Announcement cancelled.").f_color_warning(),
+            flush=True
         )
         return
 
@@ -797,7 +814,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
 
     if body is None:
         Console.print(
-            Console.Text("Announcement cancelled.").f_color_warning()
+            Console.Text("Announcement cancelled.").f_color_warning(),
+            flush=True
         )
         return
 
@@ -813,7 +831,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
 
     if not await _confirm_announcement():
         Console.print(
-            Console.Text("Announcement cancelled.").f_color_warning()
+            Console.Text("Announcement cancelled.").f_color_warning(),
+            flush=True
         )
         return
 
@@ -822,7 +841,8 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
     # -------------------------------------------------------------------------
 
     Console.print(
-        Console.Text("\nSending announcement...\n").f_color_warning()
+        Console.Text("\nSending announcement...\n").f_color_warning(),
+        flush=True
     )
 
     success, failed = await _send_announcement(
@@ -851,5 +871,6 @@ async def announce_members(bot: JDE.Bots.JDEBot) -> None:
             Console.ColorRGB(150, 150, 150)
         )
         + Console.Text(str(success + failed)).f_style_bold()
-        + "\n"
+        + "\n",
+        flush=True
     )
