@@ -1,0 +1,107 @@
+# JarBot Testing — Privacy Policy
+
+**Last updated:** 25 November 2026
+
+This Privacy Policy explains what data the Discord application **JarBot Testing** (the "Bot") may process and store. The Bot is operated by **Jarjarbin Studio** (the "developer", "we"), contact: Discord **jarjarbin_2006**.
+
+## 1. Nature of this Bot
+
+JarBot Testing is an **experimental testing application**. Its credentials are used by **multiple different bot clients and engine builds**, run **locally** by the developer for development and testing. Because its purpose is to test every kind of feature, it is configured to be able to **receive and store any data that Discord makes available to bots**, as listed below.
+
+This is the **maximum scope**. What is actually received depends on the permissions, intents and OAuth2 scopes granted to the Bot, and on which feature is being tested at a given time. We only process what a feature under test needs, and the Bot is meant to be used in **dedicated test servers**.
+
+## 2. Data we may process and store
+
+### a. User data
+Discord user ID, username, display name, discriminator (if any), avatar, banner, accent colour, public flags/badges, bot/system status, account creation date, locale, and any other public user object field provided by Discord.
+
+### b. Server member data
+Nickname, server avatar and banner, roles, join date, boost status, timeout status, permissions, pending-verification status, voice state (channel, mute, deafen, stream, camera), and other member object fields.
+
+### c. Presence data
+Online status, client type (desktop/mobile/web), and activities (for example, games played, streaming status, custom status text, rich presence details).
+
+### d. Message data
+Full message content, embeds, attachments (including files and images), links, stickers, reactions, polls, components, replies, mentions, thread and forum content, edit and delete events, and the IDs and timestamps of all of these. This includes messages in **servers and in direct messages sent to the Bot**.
+
+### e. Server data
+Server name, icon, banner, settings, channels (including permission overwrites), categories, threads, roles and permissions, emojis, stickers, scheduled events, stage instances, invites, bans, webhooks, integrations, auto-moderation rules, audit log entries, and member lists.
+
+### f. Voice data
+Voice-channel membership and state. Where a feature under test involves receiving or sending voice, audio may be processed in memory and is **not retained** unless the feature being tested requires a recording, in which case it is deleted after the test.
+
+### g. Interaction data
+Slash and context-menu command invocations, options, button clicks, select-menu choices, modal submissions, autocomplete input, and the IDs and locale associated with them.
+
+### h. OAuth2 data (only if you authorize it)
+If you choose to authorize additional scopes, the Bot may receive, depending on the scope: your Discord identity (`identify`), e-mail address (`email`), list of servers (`guilds`), your member data in servers (`guilds.members.read`), and linked third-party accounts (`connections`). Access and refresh tokens are treated as secrets and are never published.
+
+### i. Technical and test data
+Per-server and per-user settings, test results, logs (timestamps, command names, event payloads, error traces), and IP address or similar network data only where it is incidentally present in a feature under test.
+
+We do **not** ask for or knowingly collect payment data, government IDs, or other sensitive information, other than what a user chooses to post on Discord where the Bot can read it.
+
+## 3. Why we process it
+
+Solely to **develop, test, debug and secure** the Bot and the bots of the [JarBot repository](https://github.com/Jarjarbin-Studio/JarBot) built on [JarDiscordEngine](https://github.com/Jarjarbin-Studio/JarDiscordEngine), and to perform commands you request.
+
+## 4. Our commitments
+
+In line with the Discord Developer Terms and Policy, we commit that we will **not**:
+
+- sell, license, or trade your data, or use it for advertising or profiling;
+- use message content or other Discord data to **train machine-learning or AI models**;
+- share data with third parties, except as stated in section 7;
+- use the data for any purpose unrelated to testing the Bot;
+- publish personal data in the open-source repositories (secrets, tokens and test data are kept out of Git).
+
+## 5. Legal basis (GDPR)
+
+Where the GDPR applies, we process data on the basis of our **legitimate interest** in developing, testing and securing the Bot, and, where needed, to perform a command or request you make. Where you authorize an optional OAuth2 scope, that authorization is your **consent**, which you can withdraw at any time.
+
+## 6. Where data is stored and for how long
+
+- **Storage location:** data is stored **locally** on the developer's own machines or development environments (for example, local files or a local database), not on a public service.
+- **Logs:** kept up to **30 days**, then deleted.
+- **Messages, member, presence and other test data:** kept only while needed for testing and in any case **no longer than 90 days**, then deleted or wiped. Because this is a testing instance, data may be wiped earlier at any time.
+- **OAuth2 tokens:** deleted when the authorization is revoked, or when no longer needed for testing.
+- When the Bot is removed from a server, or you request deletion, that data is deleted within a reasonable time (aiming for 30 days).
+
+## 7. Sharing
+
+We do not sell or share personal data with third parties, except:
+
+- **Discord**, which necessarily processes data as the platform the Bot runs on (see [Discord's Privacy Policy](https://discord.com/privacy));
+- **infrastructure or development tools** the developer may use (for example, a hosting provider, backup, or error-tracking tool), acting only to provide that service;
+- when required by law.
+
+## 8. Your rights and choices
+
+Depending on where you live (including under the GDPR), you may have the right to access, correct, delete, restrict, port, or object to the processing of your data, and to withdraw consent. To exercise these rights, or to ask for deletion of data linked to your Discord user ID or server ID, contact **jarjarbin_2006** on Discord or open an issue on [GitHub](https://github.com/Jarjarbin-Studio/JarBot). You can also:
+
+- remove the Bot from your server at any time;
+- revoke OAuth2 authorizations in your Discord settings under *Authorized Apps*;
+- avoid sending messages in channels where the Bot is present.
+
+If you are in the EU, you may also lodge a complaint with your local data protection authority (in France, the CNIL).
+
+## 9. Children
+
+The Bot is not directed at children under the minimum age required by Discord in their country. We do not knowingly collect data from them. If you believe we have, contact us and we will delete it.
+
+## 10. Security
+
+We take reasonable measures to protect data (local storage, restricted access, bot token and secrets kept out of the repository). No system is fully secure, and as an experimental testing instance, the Bot should **not be used for anything sensitive**.
+
+## 11. Open source
+
+The code is public in [JarBot](https://github.com/Jarjarbin-Studio/JarBot) and [JarDiscordEngine](https://github.com/Jarjarbin-Studio/JarDiscordEngine), so you can verify what the bots do. Data held by the Bot is not public.
+
+## 12. Changes
+
+We may update this policy. The "Last updated" date will change and the new version will be published in the repository.
+
+## 13. Contact
+
+- Discord: **jarjarbin_2006**
+- GitHub: [Jarjarbin-Studio/JarBot](https://github.com/Jarjarbin-Studio/JarBot) (open an issue)
